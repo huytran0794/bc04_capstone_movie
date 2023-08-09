@@ -1,0 +1,261 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* START HEADER */
+/* Start Navigation bar left */
+#header__nav-left.ant-menu .ant-menu-item::after {
+  border: none;
+}
+#header__nav-left.ant-menu .ant-menu-submenu::after {
+  border: none;
+}
+#header__nav-left.ant-menu
+  .ant-menu-overflow-item-rest
+  .ant-menu-submenu-title
+  .anticon {
+  color: rgba(255, 255, 255, 0.6);
+}
+#header__nav-left.ant-menu
+  .ant-menu-overflow-item-rest:hover
+  .ant-menu-submenu-title
+  .anticon {
+  color: white;
+}
+#header__nav-left.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  background-color: transparent;
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: transparent;
+}
+#header__nav-left.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover {
+  background-color: transparent;
+}
+#header__nav-left.ant-menu
+  .ant-menu-item
+  .ant-menu-title-content
+  .nav-left__item {
+  color: rgba(255, 255, 255, 0.6);
+}
+#header__nav-left.ant-menu
+  .ant-menu-item:hover
+  .ant-menu-title-content
+  .nav-left__item {
+  color: white;
+}
+.ant-menu-submenu.ant-menu-submenu-popup .ant-menu-sub {
+  background-color: #170000;
+}
+/* End Navigation bar left */
+/* END HEADER */
+
+/* START HOMEPAGE */
+/* Start Banner */
+/* start overlay */
+.homePage__banner .homePage__banner-wrapper:hover .homePage__banner-overlay {
+  opacity: 1 !important;
+}
+/* End overlay */
+
+/* start navigation button */
+.homePage__banner .swiper-button-prev,
+.homePage__banner .swiper-button-next {
+  width: 60px;
+  height: 100%;
+  top: 0;
+  margin-top: 0;
+  color: #fff;
+}
+.homePage__banner .swiper-button-prev {
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255, 0.5),
+    rgb(255, 255, 255, 0)
+  );
+}
+.homePage__banner .swiper-button-next {
+  right: 0;
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 255, 255, 0.5),
+    rgb(255, 255, 255, 0)
+  );
+}
+/* end navigation button */
+
+/* start pagination bullet */
+.homePage__banner .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid transparent;
+  vertical-align: middle;
+}
+.homePage__banner .swiper-pagination-bullet-active {
+  border-color: #fff;
+  background-color: transparent;
+}
+/* end pagination bullet */
+/* End Banner */
+/* END HOMEPAGE */
+
+/* START THEATRES LIST PAGE */
+/* start ink bar */
+.theatre__chains.ant-tabs-top .ant-tabs-nav::before {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.theatre__lists.ant-tabs-left .ant-tabs-content-holder {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.theatre__chains
+  .ant-tabs-nav
+  .ant-tabs-nav-wrap
+  .ant-tabs-nav-list
+  .ant-tabs-ink-bar {
+  background-color: white;
+}
+/* end ink bar */
+
+/* Start Theatre list */
+.theatre__chains > .ant-tabs-content-holder {
+  padding-bottom: 16px;
+}
+.theatre__lists
+  .ant-tabs-nav
+  .ant-tabs-nav-wrap
+  .ant-tabs-nav-list
+  .ant-tabs-tab-active
+  .ant-tabs-tab-btn
+  .theatre__details {
+  color: white;
+}
+
+/* End Theater List */
+/* END THEATRES LIST PAGE */
+
+/* START BOOKINGPAGE */
+/* Start Showtime Theatres Chain */
+/* start ink bar */
+.showtimeChains.ant-tabs-top .ant-tabs-nav::before {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.showtimeChains
+  .ant-tabs-nav
+  .ant-tabs-nav-wrap
+  .ant-tabs-nav-list
+  .ant-tabs-ink-bar {
+  background-color: white;
+}
+/* end ink bar */
+/* End Showtime Theatres Chain */
+
+/* Start Showtime Date List */
+.showtimeDates
+  .ant-tabs-nav
+  .ant-tabs-nav-wrap
+  .ant-tabs-nav-list
+  .ant-tabs-ink-bar {
+  height: 0;
+}
+.showtimeDates
+  .ant-tabs-nav
+  .ant-tabs-nav-wrap
+  .ant-tabs-nav-list
+  .ant-tabs-tab
+  .ant-tabs-tab-btn
+  .showdate {
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+.showtimeDates
+  .ant-tabs-nav
+  .ant-tabs-nav-wrap
+  .ant-tabs-nav-list
+  .ant-tabs-tab
+  .ant-tabs-tab-btn
+  .showdate:hover {
+  border-color: white;
+}
+.showtimeDates
+  .ant-tabs-nav
+  .ant-tabs-nav-wrap
+  .ant-tabs-nav-list
+  .ant-tabs-tab-active
+  .ant-tabs-tab-btn
+  .showdate {
+  border-color: white;
+}
+/* End Showtime Date List */
+/* END BOOKINGPAGE */
+
+
+
+/* tabs in profile page */
+.profile .ant-tabs-ink-bar {
+  background: #9CA7CB!important;
+  height:5px!important;
+  border-radius: 10px!important;
+}
+
+.profile .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .profile .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+  border-bottom: 1.5px solid #28324A!important;
+}
+
+.profile .ant-tabs-tab-btn {
+  color: white!important;
+  font-size: 25px;
+}
+
+/* tabs in profile page */
+
+/* booking history table */
+.bookingHistoryTable .ant-table-thead th.ant-table-cell {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28324A;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.bookingHistoryTable .ant-pagination li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.bookingHistoryTable .ant-pagination li {
+  background-color: #fff!important;
+}
+
+.bookingHistoryTable .ant-pagination li button.ant-pagination-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookingHistoryTable .ant-pagination-item {
+  /* background-color: #fff!important; */
+  color: #28324A;
+}
+/* booking history table */
+
+/* form styling */
+.ant-form-item-explain-error {
+  margin-top: 0.6rem;
+  font-size: 16px;
+  transition: 0.7s;
+}
+
+.ant-form-item-feedback-icon-success,
+.ant-form-item-feedback-icon.ant-form-item-feedback-icon-error {
+  display: flex;
+}
+
+/* form styling */
